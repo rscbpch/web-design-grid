@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     <title>Dashboard</title>
@@ -11,24 +10,31 @@
 <body>
     <div class="left-bar">
         <div class="logo">
-            <i class="fa-solid fa-cat"></i> nenime
+            <p><i class="fa-solid fa-cat"></i>  nenime</p>
         </div>
-        <div class="menu">
-            <div class="title">MENU</div>
-            <div class="item"><i class="fa-solid fa-house"></i>Home</div>
-            <div class="item"><i class="fa-solid fa-compass"></i>Discovery</div>
-            <div class="item"><i class="fa-solid fa-users"></i>Community</div>
-            <div class="item"><i class="fa-solid fa-calendar-days"></i>Coming Soon</div>
+        <div class="left-content">
+            <div class="menu">
+                <div class="title">MENU</div>
+                <div class="item"><p><i class="fa-solid fa-house"></i>Home</p></div>
+                <div class="item"><p><i class="fa-solid fa-compass"></i>Discovery</p></div>
+                <div class="item"><p><i class="fa-solid fa-users"></i>Community</p></div>
+                <div class="item"><p><i class="fa-solid fa-calendar-days"></i>Coming Soon</p></div>
+            </div>
+            <br><hr><br>
+            <div class="library">
+                <div class="title">LIBRARY</div>
+                <div class="item"><p><i class="fa-solid fa-clock"></i>Recent</p></div>
+                <div class="item"><p><i class="fa-solid fa-folder"></i>My Collection</p></div>
+                <div class="item"><p><i class="fa-solid fa-download"></i>Download</p></div>
+            </div>
+            <br><hr><br>
+            <div class="options">
+                <div class="item"><p><i class="fa-solid fa-gear"></i>Setting</p></div>
+                <div class="item"><p><i class="fa-solid fa-circle-question"></i>Help</p></div>
+            </div>
         </div>
-        <div class="library">
-            <div class="title">LIBRARY</div>
-            <div class="item"><i class="fa-solid fa-clock"></i>Recent</div>
-            <div class="item"><i class="fa-solid fa-folder"></i>My Collection</div>
-            <div class="item"><i class="fa-solid fa-download"></i>Download</div>
-        </div>
-        <div class="options">
-            <div class="item"><i class="fa-solid fa-gear"></i>Setting</div>
-            <div class="item"><i class="fa-solid fa-circle-question"></i>Help</div>
+        <div class="logout">
+            <p><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</p>
         </div>
     </div>
     <div class="content">
@@ -38,19 +44,188 @@
         </div>
         <div class="trending">
             <h2>Trending</h2>
-            
+            <div class="trending-anime">
+                <img src="./assets/egg-head.jpg" alt="">
+                <div class="text">
+                    <div class="trend-name">
+                        <p>One Piece</p>
+                        <p>update 1122</p>
+                    </div>
+                    <div class="trend-buttons">
+                        <button class="watch-now">Watch Now</button>
+                        <button class="add">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="favorite">
+            <h2>Most Favorite</h2>
+            <div class="fav-list">
+                <div class="anime-box">
+                    <img src="./assets/one-piece.jpg" alt="">
+                    <div class="name">
+                        <p>One Piece</p>
+                        <div class="info">
+                            <div class="episodes">
+                                <div class="sub"><p><i class="fa-solid fa-closed-captioning"></i>1122</p></div>
+                                <div class="dub"><p><i class="fa-solid fa-microphone"></i>1096</p></div>
+                            </div>
+                            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+                            <p>TV</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-box">
+                    <img src="./assets/frieren.jpg" alt="">
+                    <div class="name">
+                        <p>Frieren: Beyond Journey's End</p>
+                        <div class="info">
+                            <div class="episodes">
+                                <div class="sub"><p><i class="fa-solid fa-closed-captioning"></i>28</p></div>
+                                <div class="dub"><p><i class="fa-solid fa-microphone"></i>28</p></div>
+                                <div class="complete">28</div> 
+                            </div>
+                            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+                            <p>TV</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-box">
+                    <img src="./assets/jujutsu-kaisen.jpg" alt="">
+                    <div class="name">
+                        <p>Jujutsu Kaisen</p>
+                        <div class="info">
+                            <div class="episodes">
+                                <div class="sub"><p><i class="fa-solid fa-closed-captioning"></i>24</p></div>
+                                <div class="dub"><p><i class="fa-solid fa-microphone"></i>24</p></div>
+                                <div class="complete">24</div> 
+                            </div>
+                            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+                            <p>TV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="for-you">
+            <p>For You</p>
+            <div class="lists">
+                <div class="poster">
+                    <img src="./assets/dandadan.jpg" alt="">
+                    <p>Dandadan</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/aot.jpg" alt="">
+                    <p>Attack on Titan</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/demon-slayer.jpg" alt="">
+                    <p>Demon Slayer</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/wind-breaker.jpg" alt="">
+                    <p>Wind Breaker</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/dr-stone.jpg" alt="">
+                    <p>Dr. Stone</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/black-clover.jpg" alt="">
+                    <p>Black Clover</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/blue-box.jpg" alt="">
+                    <p>Blue Box</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/vinland-saga.jpg" alt="">
+                    <p>Vinland Saga</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="righ-bar">
-
+    <div class="right-bar">
+        <div class="account">
+            <div class="item"><i class="fa-solid fa-bell"></i></div>
+            <div class="profile"><img src="./assets/luffy.jpg" alt=""></div>
+        </div>
+        <div class="search-bar">
+            <p><i class="fa-solid fa-magnifying-glass"></i>Search</p>
+            <i class="fa-solid fa-sliders"></i>
+        </div>
+        <div class="top">
+            <p>Top This Week</p>
+            <div class="top-list">
+                <div class="top-poster">
+                    <img src="./assets/one-piece.jpg" alt="">
+                    <div class="top-name">
+                        <p>One Piece</p>
+                        <div class="genre">
+                            <p>Adventure, Action, Fantasy</p>
+                            <p><i class="fa-solid fa-star"></i>8.72</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-poster">
+                    <img src="./assets/naruto.jpg" alt="">
+                    <div class="top-name">
+                        <p>Naruto: Shippuuden</p>
+                        <div class="genre">
+                            <p>Adventure, Action, Shounen</p>
+                            <p><i class="fa-solid fa-star"></i>8.15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-poster">
+                    <img src="./assets/bleach.jpg" alt="">
+                    <div class="top-name">
+                        <p>Bleach</p>
+                        <div class="genre">
+                            <p>Adventure, Action, Comedy</p>
+                            <p><i class="fa-solid fa-star"></i>7.8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-more">See More</button>
+        </div>
+        <div class="top-movie">
+            <p>Top Movies</p>
+            <div class="top-list">
+                <div class="top-poster">
+                    <img src="./assets/op-film-red.jpg" alt="">
+                    <div class="top-name">
+                        <p>One Piece Film: Red</p>
+                        <div class="genre">
+                            <p>Fantsy, Adventure</p>
+                            <p><i class="fa-solid fa-star"></i>8.49</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-poster">
+                    <img src="./assets/spirited-away.jpg" alt="">
+                    <div class="top-name">
+                        <p>Spirited Away</p>
+                        <div class="genre">
+                            <p>Adventure, Family</p>
+                            <p><i class="fa-solid fa-star"></i>8.6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-poster">
+                    <img src="./assets/silent-voice.jpg" alt="">
+                    <div class="top-name">
+                        <p>A Silent Voice</p>
+                        <div class="genre">
+                            <p>Psychology, Drama</p>
+                            <p><i class="fa-solid fa-star"></i>8.1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-more">See More</button>
+        </div>
     </div>
-=======
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title></title>
-</head>
-<body>
-    
->>>>>>> 1653680ff82a98b0e4803d7e0d3c382840702bc3
 </body>
 </html>
